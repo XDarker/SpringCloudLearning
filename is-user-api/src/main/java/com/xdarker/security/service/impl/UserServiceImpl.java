@@ -1,5 +1,6 @@
 package com.xdarker.security.service.impl;
 
+import com.lambdaworks.crypto.SCryptUtil;
 import com.xdarker.security.dto.UserDto;
 import com.xdarker.security.entity.User;
 import com.xdarker.security.repository.UserRepository;
@@ -24,6 +25,7 @@ public class UserServiceImpl implements UserService {
     public UserDto create(UserDto info) {
         User user = new User();
         BeanUtils.copyProperties(info, user);
+        user.setPassword(SCryptUtil.scrypt(user.getPassword(), 32768,8,1));
         userRepository.save(user);
         info.setId(user.getId());
         return info;

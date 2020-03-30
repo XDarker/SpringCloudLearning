@@ -1,5 +1,6 @@
 package com.xdarker.security.filter;
 
+import com.lambdaworks.crypto.SCryptUtil;
 import com.xdarker.security.entity.User;
 import com.xdarker.security.repository.UserRepository;
 import org.apache.commons.lang3.StringUtils;
@@ -38,7 +39,7 @@ public class BasicAuthorizationFilter extends OncePerRequestFilter {
             String password = items[1];
 
             User user = userRepository.findByUsername(username);
-            if (user != null && password.equals(user.getPassword())) {
+            if (user != null && SCryptUtil.check(password, user.getPassword())) {
                 request.setAttribute("user", user);
             }
         }

@@ -19,6 +19,8 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @NotBlank(message = "用户名不能为null")
+    @Column(unique = true)
     private String name;
 
     @NotBlank(message = "用户名不能为null")
