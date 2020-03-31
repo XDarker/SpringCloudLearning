@@ -7,6 +7,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.apache.tomcat.util.codec.binary.Base64;
 import org.checkerframework.checker.units.qual.A;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 import org.springframework.util.Base64Utils;
 import org.springframework.web.filter.OncePerRequestFilter;
@@ -23,12 +24,14 @@ import java.io.IOException;
  * @Date 2020/3/1 17:30
  */
 @Component
+@Order(2)
 public class BasicAuthorizationFilter extends OncePerRequestFilter {
 
     @Autowired
     private UserRepository userRepository;
 
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
+        logger.info("BasicAuthorizationFilter start");
         String authHeader = request.getHeader("Authorization");
         if (StringUtils.isNotBlank(authHeader)) {
             String token64 = StringUtils.substringAfter(authHeader, "Basic ");

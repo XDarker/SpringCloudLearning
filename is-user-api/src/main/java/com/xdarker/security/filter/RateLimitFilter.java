@@ -1,6 +1,7 @@
 package com.xdarker.security.filter;
 
 import com.google.common.util.concurrent.RateLimiter;
+import org.springframework.core.annotation.Order;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
@@ -17,12 +18,15 @@ import java.io.IOException;
  * @Date 2020/3/1 16:19
  */
 @Component
+@Order(1)
 public class RateLimitFilter extends OncePerRequestFilter {
 
     //流控控制器
     private RateLimiter rateLimiter = RateLimiter.create(1);
 
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
+
+        logger.info("RateLimitFilter start");
 
         if (rateLimiter.tryAcquire()) {
             filterChain.doFilter(request, response);
