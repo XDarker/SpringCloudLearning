@@ -31,7 +31,7 @@ public class BasicAuthorizationFilter extends OncePerRequestFilter {
     private UserRepository userRepository;
 
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
-        logger.info("BasicAuthorizationFilter start");
+        logger.info("BasicAuthorizationFilter start 22222222");
         String authHeader = request.getHeader("Authorization");
         if (StringUtils.isNotBlank(authHeader)) {
             String token64 = StringUtils.substringAfter(authHeader, "Basic ");

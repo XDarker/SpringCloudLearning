@@ -21,4 +21,6 @@ public interface UserService {
     UserDto get(Long id);
 
     List<UserDto> query(String name);
+
+    UserDto login(UserDto user);
 }

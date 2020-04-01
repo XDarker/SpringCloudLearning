@@ -30,6 +30,15 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+
+    @GetMapping("/login")
+    public void login(@Validated UserDto user, HttpServletRequest request) {
+
+
+        UserDto userDto = userService.login(user);
+        request.getSession().setAttribute("user", userDto);
+    }
+
     @PostMapping
     public UserDto create(@RequestBody @Validated UserDto user) {
         return userService.create(user);

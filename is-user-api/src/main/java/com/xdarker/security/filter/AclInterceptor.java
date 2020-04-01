@@ -1,10 +1,10 @@
 package com.xdarker.security.filter;
 
-import com.xdarker.security.log.AuditLog;
-import com.xdarker.security.repository.AuditLogRepository;
+import com.xdarker.security.entity.User;
+import org.apache.commons.lang3.ArrayUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
@@ -15,35 +15,47 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * @Created by XDarker
  * @Description TODO
- * @Date 2020/3/31 23:06
+ * @Date 2020/4/1 23:36
  */
 @Component
-public class AuditLogInterceptor extends HandlerInterceptorAdapter {
+public class AclInterceptor extends HandlerInterceptorAdapter {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
 
-    @Autowired
-    private AuditLogRepository auditLogRepository;
+    private String[] permitUrls = new String[]{"/users/login"};
+
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
 
-        logger.info("AuditLogInterceptor start 3333333333");
+        logger.info("AclInterceptor start 44444444");
 
-        AuditLog auditLog = new AuditLog();
-        auditLog.setMethod(request.getMethod());
-        auditLog.setPath(request.getRequestURI());
-        auditLog.getUsername();
+        boolean result = true;
 
-//        User user = (User) request.getAttribute("user");
-//        if (user != null){
-//            auditLog.setUsername(user.getUsername());
-//        }
-        auditLogRepository.save(auditLog);
 
-        request.setAttribute("auditLogId", auditLog.getId());
+        if (!ArrayUtils.contains(permitUrls, request.getRequestURI())) {
+            User user = (User) request.getAttribute("user");
+            if (user == null) {
+                response.setContentType("text/plain");
+                response.getWriter().write("need authentication");
+                response.setStatus(HttpStatus.UNAUTHORIZED.value());
 
-        return true;
+                //拒绝请求
+                result = false;
+            } else {
+                String method = request.getMethod();
+                if (!user.hasPermission(method)) {
+                    response.setContentType("text/plain");
+                    response.getWriter().write("forbidden");
+                    response.setStatus(HttpStatus.FORBIDDEN.value());
+                    result = false;
+                }
+            }
+
+        }
+
+
+        return result;
     }
 
     @Override
@@ -51,24 +63,9 @@ public class AuditLogInterceptor extends HandlerInterceptorAdapter {
         super.postHandle(request, response, handler, modelAndView);
     }
 
-    /**
-     * 不管成功还是失败都会调该方法
-     * @param request
-     * @param response
-     * @param handler
-     * @param ex
-     * @throws Exception
-     */
     @Override
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
-
-        Long auditLogId = (Long) request.getAttribute("auditLogId");
-
-        AuditLog auditLog = auditLogRepository.findById(auditLogId).get();
-
-        auditLog.setStatus(response.getStatus());
-
-        auditLogRepository.save(auditLog);
+        super.afterCompletion(request, response, handler, ex);
     }
 
     @Override

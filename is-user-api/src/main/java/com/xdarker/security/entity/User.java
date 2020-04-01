@@ -2,6 +2,7 @@ package com.xdarker.security.entity;
 
 import com.xdarker.security.dto.UserDto;
 import lombok.Data;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
 
 import javax.persistence.*;
@@ -29,11 +30,25 @@ public class User {
     @NotBlank(message = "密码不能为空")
     private String password;
 
+    private String permissions;
+
     public UserDto buildInfo(){
         UserDto userDto = new UserDto();
 
         BeanUtils.copyProperties(this, userDto);
 
         return userDto;
+    }
+
+    public boolean hasPermission(String method) {
+
+        boolean result = false;
+        if (StringUtils.equalsIgnoreCase("get", method)){
+            result = StringUtils.contains(permissions, "r");
+
+        }else{
+            result = StringUtils.contains(permissions, "w");
+        }
+        return result;
     }
 }

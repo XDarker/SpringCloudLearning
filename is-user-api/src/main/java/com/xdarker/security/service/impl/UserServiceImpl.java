@@ -46,4 +46,9 @@ public class UserServiceImpl implements UserService {
     public List<UserDto> query(String name) {
         return null;
     }
+
+    @Override
+    public UserDto login(UserDto user) {
+        return null;
+    }
 }
