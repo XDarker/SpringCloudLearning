@@ -10,6 +10,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 /**
@@ -32,11 +33,21 @@ public class UserController {
 
 
     @GetMapping("/login")
-    public void login(@Validated UserDto user, HttpServletRequest request) {
+    public void login(@RequestBody @Validated UserDto user, HttpServletRequest request) {
 
 
         UserDto userDto = userService.login(user);
-        request.getSession().setAttribute("user", userDto);
+        HttpSession session =request.getSession(false);
+        if (session != null){
+            session.invalidate();
+        }
+        request.getSession(true).setAttribute("user", userDto);
+    }
+
+    @GetMapping("/logout")
+    public void logout(HttpServletRequest request) {
+
+        request.getSession().invalidate();
     }
 
     @PostMapping
@@ -57,8 +68,8 @@ public class UserController {
     @GetMapping("/{id}")
     public UserDto get(@PathVariable Long id, HttpServletRequest request) {
 
-        User user = (User) request.getAttribute("user");
-        if (user == null || user.getId() != id){
+        UserDto userDto = (UserDto) request.getSession().getAttribute("user");
+        if (userDto == null || userDto.getId() != id){
             throw new RuntimeException("身份认证信息异常，获取用户信息失败");
         }
         return userService.get(id);

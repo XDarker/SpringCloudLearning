@@ -1,5 +1,6 @@
 package com.xdarker.security.filter;
 
+import com.xdarker.security.dto.UserDto;
 import com.xdarker.security.entity.User;
 import org.apache.commons.lang3.ArrayUtils;
 import org.slf4j.Logger;
@@ -34,8 +35,8 @@ public class AclInterceptor extends HandlerInterceptorAdapter {
 
 
         if (!ArrayUtils.contains(permitUrls, request.getRequestURI())) {
-            User user = (User) request.getAttribute("user");
-            if (user == null) {
+            UserDto userDto = (UserDto) request.getSession().getAttribute("user");
+            if (userDto == null) {
                 response.setContentType("text/plain");
                 response.getWriter().write("need authentication");
                 response.setStatus(HttpStatus.UNAUTHORIZED.value());
@@ -44,7 +45,7 @@ public class AclInterceptor extends HandlerInterceptorAdapter {
                 result = false;
             } else {
                 String method = request.getMethod();
-                if (!user.hasPermission(method)) {
+                if (!userDto.hasPermission(method)) {
                     response.setContentType("text/plain");
                     response.getWriter().write("forbidden");
                     response.setStatus(HttpStatus.FORBIDDEN.value());
