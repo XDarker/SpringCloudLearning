@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: price-api
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/security?characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+#    数据字段同步
+    generate-ddl: true
+    show-sql: true
+
+server:
+
+  port: 9060
