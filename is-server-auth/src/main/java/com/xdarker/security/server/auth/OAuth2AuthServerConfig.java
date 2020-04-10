@@ -4,8 +4,7 @@ package com.xdarker.security.server.auth;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.core.parameters.P;
-import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer;
 import org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableAuthorizationServer;
@@ -22,15 +21,15 @@ import org.springframework.security.oauth2.config.annotation.web.configurers.Aut
 public class OAuth2AuthServerConfig extends AuthorizationServerConfigurerAdapter {
 
 
-    @Autowired
-    private PasswordEncoder passwordEncoder;
+//    @Autowired
+//    private PasswordEncoder passwordEncoder;
 
     @Autowired
     private AuthenticationManager authenticationManager;
 
     @Override
     public void configure(AuthorizationServerSecurityConfigurer security) throws Exception {
-        super.configure(security);
+        security.checkTokenAccess("isAuthenticated()");
     }
 
     /**
@@ -43,7 +42,7 @@ public class OAuth2AuthServerConfig extends AuthorizationServerConfigurerAdapter
 
         clients.inMemory()
                 .withClient("orderApp")
-                .secret(passwordEncoder.encode("123456"))
+                .secret(new BCryptPasswordEncoder().encode("123456"))
                 .scopes("read", "write")
                 .accessTokenValiditySeconds(3600)
                 //访问哪些资源服务器
@@ -53,7 +52,7 @@ public class OAuth2AuthServerConfig extends AuthorizationServerConfigurerAdapter
                 .and()
 
                 .withClient("orderService")
-                .secret(passwordEncoder.encode("123456"))
+                .secret(new BCryptPasswordEncoder().encode("123456"))
                 .scopes("read")
                 .accessTokenValiditySeconds(3600)
                 //访问哪些资源服务器
