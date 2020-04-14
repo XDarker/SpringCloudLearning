@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31dbc9a2-a826-4abd-98a3-e5c29db7771f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../is-order-api/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../is-order-api/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../is-price-api/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../is-order-api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../is-order-api/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../is-server-auth/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../is-server-auth/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../is-server-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../is-server-auth/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../is-server-auth/src/main/java/com/xdarker/security/server/auth/OAuth2AuthServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../is-server-auth/src/main/java/com/xdarker/security/server/auth/OAuth2AuthServerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../is-server-auth/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../is-server-auth/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../is-server-auth/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../is-server-auth/target/classes/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,16 +26,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="85" column="10" selection-start-line="8" selection-start-column="2" selection-end-line="85" selection-end-column="10" />
+            <state relative-caret-position="373">
+              <caret line="51" column="17" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="51" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xdarker/security/UserApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
@@ -342,17 +344,18 @@
       <workItem from="1585926130951" duration="3424000" />
       <workItem from="1586182852943" duration="636000" />
       <workItem from="1586266885854" duration="1231000" />
+      <workItem from="1586877609194" duration="458000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37315000" />
+    <option name="totallyTimeSpent" value="37773000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26434922" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26839128" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -621,13 +624,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="85" column="10" selection-start-line="8" selection-start-column="2" selection-end-line="85" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xdarker/security/UserApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -635,6 +631,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="51" column="17" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="51" selection-end-column="17" />
         </state>
       </provider>
     </entry>
