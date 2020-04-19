@@ -1,11 +1,35 @@
+server:
+  port: 9070
 zuul:
   routes:
+    #这里没有使用服务发现组件，所以将服务服务地址写死
     token:
       url: http://localhost:9090
     order:
       url: http://localhost:9080
+  #zuul.sensitiveHeaders设置为空，代表不过滤任何Header信息，Header会向下转发
   sensitive-headers:
+  ratelimit:
+    enabled: true
+    repository: JPA  #对应存储类型（用来存储统计信息）
+    behind-proxy: true  #代理之后
+    default-policy-list: #可选 - 针对所有的路由配置的策略，除非特别配置了policies
+      - limit: 2 #可选 - 每个刷新时间窗口对应的请求数量限制
+        quota: 1 #可选-  每个刷新时间窗口对应的请求时间限制（秒）
+        refresh-interval: 3 # 刷新时间窗口的时间，默认值 (秒)
+        type: #可选 限流方式
+          - url
 
-server:
-  port: 9070
+spring:
+#  redis:
+#    host: 127.0.0.1
+#    port: 6379
+    # password:
+  application:
+    name: gateway
 
+  datasource:
+    url: jdbc:mysql://localhost:3306/security?characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver

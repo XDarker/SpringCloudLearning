@@ -3,11 +3,23 @@
   <component name="ChangeListManager">
     <list default="true" id="31dbc9a2-a826-4abd-98a3-e5c29db7771f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../is-order-api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../is-order-api/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../is-order-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../is-order-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../is-order-api/src/main/java/com/xdarker/security/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../is-order-api/src/main/java/com/xdarker/security/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../is-order-api/src/main/java/com/xdarker/security/server/resource/OAuth2ResourceServerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../is-order-api/src/main/java/com/xdarker/security/server/resource/OAuth2WebSecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../is-order-api/src/main/java/com/xdarker/security/server/resource/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../is-order-api/src/main/java/com/xdarker/security/server/resource/UserDetailsServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../is-order-api/target/classes/com/xdarker/security/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../is-order-api/target/classes/com/xdarker/security/controller/OrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../is-order-api/target/classes/com/xdarker/security/server/resource/OAuth2ResourceServerConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../is-order-api/target/classes/com/xdarker/security/server/resource/OAuth2WebSecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../is-order-api/target/classes/com/xdarker/security/server/resource/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../is-order-api/target/classes/com/xdarker/security/server/resource/UserDetailsServiceImpl.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../is-server-auth/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../is-server-auth/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../is-server-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../is-server-auth/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../is-server-auth/src/main/java/com/xdarker/security/server/auth/OAuth2AuthServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../is-server-auth/src/main/java/com/xdarker/security/server/auth/OAuth2AuthServerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../is-server-auth/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../is-server-auth/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../is-server-auth/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../is-server-auth/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../is-server-gateway/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../is-server-gateway/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../is-server-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../is-server-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../is-server-gateway/src/main/java/com/xdarker/security/filter/OAuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../is-server-gateway/src/main/java/com/xdarker/security/filter/OAuthFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../is-server-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../is-server-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../is-server-gateway/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../is-server-gateway/target/classes/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,23 +38,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="373">
-              <caret line="51" column="17" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="51" selection-end-column="17" />
+              <caret line="51" column="17" selection-start-line="38" selection-start-column="4" selection-end-line="51" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xdarker/security/UserApplication.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="380">
+              <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -212,7 +221,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="30" />
     <option name="y" value="75" />
     <option name="width" value="1890" />
@@ -226,6 +235,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -270,8 +281,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -345,17 +354,17 @@
       <workItem from="1586182852943" duration="636000" />
       <workItem from="1586266885854" duration="1231000" />
       <workItem from="1586877609194" duration="458000" />
+      <workItem from="1587302003866" duration="619000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37773000" />
+    <option name="totallyTimeSpent" value="38392000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26839128" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2724333" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -481,13 +490,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.2.5.RELEASE/spring-data-commons-2.2.5.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -536,6 +538,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
           <caret line="46" column="74" selection-start-line="46" selection-start-column="74" selection-end-line="46" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="51" column="17" selection-start-line="38" selection-start-column="4" selection-end-line="51" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xdarker/security/UserApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -624,20 +643,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xdarker/security/UserApplication.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="51" column="17" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="51" selection-end-column="17" />
+        <state relative-caret-position="380">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
         </state>
       </provider>
     </entry>

@@ -1,10 +1,7 @@
 package com.xdarker.security.controller;
 
 import com.xdarker.security.dto.OrderDto;
-import com.xdarker.security.dto.PriceDto;
-import com.xdarker.security.server.resource.User;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
@@ -22,7 +19,7 @@ public class OrderController {
     private RestTemplate restTemplate = new RestTemplate();
 
     @PostMapping
-    public OrderDto create(@RequestBody OrderDto orderDto, @AuthenticationPrincipal String username) {
+    public OrderDto create(@RequestBody OrderDto orderDto, @RequestHeader String username) {
 
         log.info("username:{}", username);
 //        PriceDto priceDto =  restTemplate.getForObject("http://localhost:9060/prices/" + orderDto.getProductId(), PriceDto.class);
@@ -32,10 +29,9 @@ public class OrderController {
     }
 
     @GetMapping("/{id}")
-    public OrderDto getInfo(@PathVariable Long id, @AuthenticationPrincipal User user) {
+    public OrderDto getInfo(@PathVariable Long id) {
 
         log.info("Order id:{}", id);
-        log.info("user id:{}", user.getId());
 //        PriceDto priceDto =  restTemplate.getForObject("http://localhost:9060/prices/" + orderDto.getProductId(), PriceDto.class);
 //
 //        log.info("price:{}",priceDto.getPrice());
