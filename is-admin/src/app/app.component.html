@@ -1,5 +1,22 @@
-<div style="text-align: center">
+<div [hidden]="!authenticated" style="text-align: center">
   <h1>
     XSJ {{title}}
   </h1>
+</div>
+
+<div [hidden]="authenticated">
+  <form role="form" (submit)="login()">
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text"  class="form-control" id="username" name="username" [(ngModel)]="credentials.username" />
+    </div>
+
+    <div class="form-group">
+      <label for="password">password:</label>
+      <input type="password"  class="form-control" id="password" name="password" [(ngModel)]="credentials.password" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">登录</button>
+
+  </form>
 </div>
