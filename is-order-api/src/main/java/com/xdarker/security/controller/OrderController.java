@@ -29,14 +29,15 @@ public class OrderController {
     }
 
     @GetMapping("/{id}")
-    public OrderDto getInfo(@PathVariable Long id) {
+    public OrderDto getInfo(@PathVariable Long id, @RequestHeader String username) {
 
         log.info("Order id:{}", id);
 //        PriceDto priceDto =  restTemplate.getForObject("http://localhost:9060/prices/" + orderDto.getProductId(), PriceDto.class);
-//
+        log.info("username:{}", id);
 //        log.info("price:{}",priceDto.getPrice());
         OrderDto orderDto = new OrderDto();
-        orderDto.setProductId(id);
+        orderDto.setProductId(id * 5);
+        orderDto.setId(id);
         return orderDto;
     }
 }

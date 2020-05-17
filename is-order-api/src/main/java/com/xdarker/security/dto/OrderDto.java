@@ -11,4 +11,5 @@ import lombok.Data;
 public class OrderDto {
 
     private Long productId;
+    private Long id;
 }

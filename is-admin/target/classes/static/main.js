@@ -32,7 +32,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div style=\"text-align: center\">\n  <h1>\n    XSJ {{title}}\n  </h1>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div [hidden]=\"!authenticated\" style=\"text-align: center\">\n  <h1>\n    XSJ {{title}}\n  </h1>\n\n    <button (click)=\"getOrder()\" type=\"button\" class=\"btn btn-primary\">获取订单信息</button>\n    <p>order id:{{order.id}} </p>\n    <p>order productId:{{order.productId}}</p>\n  <button (click)=\"logout()\" type=\"button\" class=\"btn btn-primary\">退出</button>\n\n\n\n</div>\n\n<!--<div [hidden]=\"authenticated\">-->\n<!--  <form role=\"form\" (submit)=\"login()\">-->\n<!--    <div class=\"form-group\">-->\n<!--      <label for=\"username\">Username:</label>-->\n<!--      <input type=\"text\"  class=\"form-control\" id=\"username\" name=\"username\" [(ngModel)]=\"credentials.username\" />-->\n<!--    </div>-->\n\n<!--    <div class=\"form-group\">-->\n<!--      <label for=\"password\">password:</label>-->\n<!--      <input type=\"password\"  class=\"form-control\" id=\"password\" name=\"password\" [(ngModel)]=\"credentials.password\" />-->\n<!--    </div>-->\n\n<!--    <button type=\"submit\" class=\"btn btn-primary\">登录</button>-->\n\n<!--  </form>-->\n<!--</div>-->\n");
 
 /***/ }),
 
@@ -309,13 +309,58 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+
 
 
 let AppComponent = class AppComponent {
-    constructor() {
+    constructor(http) {
+        this.http = http;
         this.title = 'aaa';
+        this.authenticated = false;
+        this.credentials = {
+            username: 'XSJ',
+            password: '123456'
+        };
+        this.order = {};
+        this.http.get("/me").subscribe(data => {
+            if (data) {
+                this.authenticated = true;
+            }
+            if (!this.authenticated) {
+                window.location.href = "http://localhost:9090/oauth/authorize?"
+                    + 'client_id=admin&'
+                    + 'redirect_uri=http://localhost:8080/oauth/callback&'
+                    + 'response_type=code&'
+                    + 'state=abc';
+            }
+        });
+    }
+    getOrder() {
+        this.http.get('api/order/orders/1').subscribe(data => {
+            this.order = data;
+        }, () => {
+            alert('get order fail');
+        });
+    }
+    login() {
+        this.http.post('login', this.credentials).subscribe(() => {
+            this.authenticated = true;
+        }, () => {
+            alert("login fail");
+        });
+    }
+    logout() {
+        this.http.post('logout', this.credentials).subscribe(() => {
+            this.authenticated = false;
+        }, () => {
+            alert("logout fail");
+        });
     }
 };
+AppComponent.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+];
 AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-root',
@@ -342,6 +387,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm2015/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+
+
 
 
 
@@ -354,7 +403,9 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]
         ],
         imports: [
-            _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"]
+            _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"],
+            _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClientModule"]
         ],
         providers: [],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]

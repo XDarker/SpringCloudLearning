@@ -2,25 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf3d2a8b-6375-4265-a3d9-59f5817fb6e3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../is-admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../is-admin/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../is-admin/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../is-admin/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../is-admin/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../is-admin/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../is-admin/src/main/java/com/xdarker/security/AdminApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../is-admin/src/main/java/com/xdarker/security/AdminApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../is-admin/src/main/resources/static/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../is-admin/src/main/resources/static/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../is-admin/src/main/resources/static/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../is-admin/src/main/resources/static/main.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../is-admin/target/classes/com/xdarker/security/AdminApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../is-admin/target/classes/com/xdarker/security/AdminApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../is-admin/target/classes/static/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../is-admin/target/classes/static/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../is-admin/target/classes/static/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../is-admin/target/classes/static/main.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../is-admin/target/classes/static/vendor.js" beforeDir="false" afterPath="$PROJECT_DIR$/../is-admin/target/classes/static/vendor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../is-admin/target/classes/static/vendor.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../is-admin/target/classes/static/vendor.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../is-order-api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../is-order-api/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../is-order-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../is-order-api/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../is-order-api/src/main/java/com/xdarker/security/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../is-order-api/src/main/java/com/xdarker/security/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../is-order-api/src/main/java/com/xdarker/security/server/resource/OAuth2ResourceServerConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../is-order-api/src/main/java/com/xdarker/security/server/resource/OAuth2WebSecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../is-order-api/src/main/java/com/xdarker/security/server/resource/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../is-order-api/src/main/java/com/xdarker/security/server/resource/UserDetailsServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../is-order-api/src/main/java/com/xdarker/security/dto/OrderDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../is-order-api/src/main/java/com/xdarker/security/dto/OrderDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../is-order-api/target/classes/com/xdarker/security/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../is-order-api/target/classes/com/xdarker/security/controller/OrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../is-order-api/target/classes/com/xdarker/security/server/resource/OAuth2ResourceServerConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../is-order-api/target/classes/com/xdarker/security/server/resource/OAuth2WebSecurityConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../is-order-api/target/classes/com/xdarker/security/server/resource/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../is-order-api/target/classes/com/xdarker/security/server/resource/UserDetailsServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../is-order-api/target/classes/com/xdarker/security/dto/OrderDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/../is-order-api/target/classes/com/xdarker/security/dto/OrderDto.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../is-server-gateway/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../is-server-gateway/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../is-server-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../is-server-gateway/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../is-server-gateway/src/main/java/com/xdarker/security/filter/OAuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../is-server-gateway/src/main/java/com/xdarker/security/filter/OAuthFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../is-server-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../is-server-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../is-server-gateway/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../is-server-gateway/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../is-user-api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../is-user-api/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../is-server-gateway/target/classes/com/xdarker/security/filter/OAuthFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../is-server-gateway/target/classes/com/xdarker/security/filter/OAuthFilter.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,47 +40,63 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="58" column="26" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xdarker/security/server/auth/OAuth2AuthServerConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1200">
+              <caret line="75" column="32" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1475#1476#0" expanded="true" />
+                <element signature="e#1528#1529#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xdarker/security/server/auth/OAuth2WebSecurityConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="18" selection-start-line="18" selection-end-line="20" selection-end-column="75" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1119#1120#0" expanded="true" />
+                <element signature="e#1169#1170#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xdarker/security/server/auth/UserDetailsServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xdarker/security/OAuth2AuthServer.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="80">
-              <caret line="4" selection-start-line="4" selection-end-line="8" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.3.5.RELEASE/spring-security-oauth2-2.3.5.RELEASE.jar!/org/springframework/security/oauth2/provider/endpoint/CheckTokenEndpoint.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="700">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.3.5.RELEASE/spring-security-oauth2-2.3.5.RELEASE.jar!/org/springframework/security/oauth2/provider/token/AccessTokenConverter.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.3.5.RELEASE/spring-security-oauth2-2.3.5.RELEASE.jar!/org/springframework/security/oauth2/provider/token/DefaultUserAuthenticationConverter.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -147,6 +164,7 @@
       <find>checkToken</find>
       <find>active</find>
       <find>convertAccessToken</find>
+      <find>locathost</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -351,17 +369,20 @@
       <workItem from="1587136549608" duration="651000" />
       <workItem from="1587286318771" duration="5138000" />
       <workItem from="1587304463559" duration="979000" />
+      <workItem from="1588677166274" duration="1074000" />
+      <workItem from="1589081985014" duration="2105000" />
+      <workItem from="1589702875878" duration="1857000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20500000" />
+    <option name="totallyTimeSpent" value="25536000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25141472" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25949878" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -377,7 +398,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3285968" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5004042" side_tool="true" weight="0.39964476" />
       <window_info anchor="bottom" id="Problems" order="11" />
@@ -441,6 +462,78 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/xdarker/security/AppTest.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.1.5.RELEASE/spring-security-core-5.1.5.RELEASE-sources.jar!/org/springframework/security/core/userdetails/UserDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.3.5.RELEASE/spring-security-oauth2-2.3.5.RELEASE.jar!/org/springframework/security/oauth2/config/annotation/web/configuration/AuthorizationServerEndpointsConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="35" column="73" selection-start-line="35" selection-start-column="73" selection-end-line="35" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.3.5.RELEASE/spring-security-oauth2-2.3.5.RELEASE.jar!/org/springframework/security/oauth2/common/DefaultOAuth2AccessToken.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="72" column="29" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
+          <folding>
+            <element signature="e#1539#1540#0" expanded="true" />
+            <element signature="e#1572#1573#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1160">
+          <caret line="58" column="26" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.3.5.RELEASE/spring-security-oauth2-2.3.5.RELEASE.jar!/org/springframework/security/oauth2/provider/endpoint/CheckTokenEndpoint.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.3.5.RELEASE/spring-security-oauth2-2.3.5.RELEASE.jar!/org/springframework/security/oauth2/provider/token/AccessTokenConverter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.3.5.RELEASE/spring-security-oauth2-2.3.5.RELEASE.jar!/org/springframework/security/oauth2/provider/token/DefaultUserAuthenticationConverter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xdarker/security/server/auth/OAuth2AuthServerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="75" column="32" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1475#1476#0" expanded="true" />
+            <element signature="e#1528#1529#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xdarker/security/server/auth/OAuth2WebSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -463,13 +556,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.1.5.RELEASE/spring-security-core-5.1.5.RELEASE-sources.jar!/org/springframework/security/core/userdetails/UserDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xdarker/security/OAuth2AuthServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -477,57 +563,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xdarker/security/server/auth/OAuth2AuthServerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="75" column="32" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1475#1476#0" expanded="true" />
-            <element signature="e#1528#1529#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.3.5.RELEASE/spring-security-oauth2-2.3.5.RELEASE.jar!/org/springframework/security/oauth2/config/annotation/web/configuration/AuthorizationServerEndpointsConfiguration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="35" column="73" selection-start-line="35" selection-start-column="73" selection-end-line="35" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.3.5.RELEASE/spring-security-oauth2-2.3.5.RELEASE.jar!/org/springframework/security/oauth2/common/DefaultOAuth2AccessToken.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="72" column="29" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
-          <folding>
-            <element signature="e#1539#1540#0" expanded="true" />
-            <element signature="e#1572#1573#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.3.5.RELEASE/spring-security-oauth2-2.3.5.RELEASE.jar!/org/springframework/security/oauth2/provider/endpoint/CheckTokenEndpoint.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.3.5.RELEASE/spring-security-oauth2-2.3.5.RELEASE.jar!/org/springframework/security/oauth2/provider/token/AccessTokenConverter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.3.5.RELEASE/spring-security-oauth2-2.3.5.RELEASE.jar!/org/springframework/security/oauth2/provider/token/DefaultUserAuthenticationConverter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -566,20 +601,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3260">
           <caret line="190" selection-start-line="190" selection-end-line="190" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="58" column="26" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" selection-start-line="4" selection-end-line="8" selection-end-column="47" />
         </state>
       </provider>
     </entry>
